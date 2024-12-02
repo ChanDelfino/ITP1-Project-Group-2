@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins";
+}
+
+/* Navigation Bar Section */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+#navbar .logo-container img {
+  width: 40px; 
+  height: auto;
+  border-radius: 5px;
+}
+
+
+#navbar .logo-name {
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+#navbar ul li {
+  display: inline-block;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+
+.btn, .card button {
+
+  color: white; 
+  cursor: pointer;
+  border: none; 
+  background-color: rgb(22, 22, 94); 
+  padding: 1rem 2rem; 
+  border-radius: 15px; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; 
+  display: inline-block; 
+  font-size: 20px; 
+}
+
+
+
+/* Main Body Section */
+
+.overlay .btn {
+  margin-top: 20px; 
+}
+
+img {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+#home {
+  display: flex;
+
+  text-align: center;
+  flex-direction: column;
+  padding: 220px 200px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.overlay {
+  background: rgb(0, 0, 0, -5);
+  height: 100vh;
+}
+.overlay h1{
+
+  font-size: 40px;
+  font-weight: bold;
+
+}
+.overlay p {
+
+    font-size: 25px;
+
+  }
+  
