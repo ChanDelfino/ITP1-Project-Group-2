@@ -69,6 +69,17 @@
 }
 
 
+#navbar ul li a:hover {
+  color:rgb(94, 158, 61); 
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+#navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
 .btn, .card button {
 
   color: white; 
@@ -82,7 +93,11 @@
   font-size: 20px; 
 }
 
-
+.btn:hover, .card button:hover {
+  background-color: rgb(94, 158, 61); 
+  color: white; 
+  transform: translateY(-2px); 
+}
 
 /* Main Body Section */
 
