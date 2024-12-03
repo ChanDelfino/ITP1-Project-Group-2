@@ -7,7 +7,7 @@
     font-family: "Poppins";
   }
 
-/* Navigation Bar Section */
+  /* Navigation Bar Section */
 
   #navbar {
     display: flex;
@@ -23,13 +23,11 @@
     transition: background-color 0.3s ease;
   }
   
-  
   .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
+  }  
   
   #navbar .logo-container img {
     width: 40px; 
@@ -43,6 +41,7 @@
     font-weight: bolder;
     color: white;
     font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgb(34,193,195);
   }
   
  
@@ -70,7 +69,7 @@
   
  
   #navbar ul li a:hover {
-    color:rgb(94, 158, 61); 
+    color:rgb(34,193,195); 
     background-color: rgba(255, 255, 255, 0.2); 
   }
   
@@ -79,7 +78,7 @@
     background-color: rgba(0, 0, 0, 0.8); 
   }
   
-
+  
   .btn, .card button {
  
     color: white; 
@@ -94,7 +93,7 @@
   }
   
   .btn:hover, .card button:hover {
-    background-color: rgb(94, 158, 61); 
+    background-color: rgb(34,193,195); 
     color: white; 
     transform: translateY(-2px); 
   }
@@ -139,6 +138,9 @@
 
     font-size: 40px;
     font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(34,193,195);
+
 
   }
   .overlay p {
@@ -147,7 +149,8 @@
 
     }
     
- 
+  
+  /* Menu Section */
   
   #menu {
     padding: 0;
@@ -180,15 +183,27 @@
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 10px 20px;
-  }
-  
-  .card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.card img {
     position: relative;
     width: 100%;
     height: 50vh;
     border-radius: 15px 15px 0 0;
-  }
-  
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); 
+    border-radius: 15px 15px 15px 15px;
+}
   .details {
     padding: 20px 10px;
     display: grid;
@@ -221,7 +236,7 @@
     text-align: center;
   }
   
-/* Footer Section */
+  /* Footer Section */
 
   footer {
     width: 100%;
@@ -247,7 +262,10 @@
     padding: 10px;
 }
 
+.col ul{
 
+  text-align: center;
+}
 
 .logo {
     width: 80px;
@@ -260,6 +278,7 @@
     position: relative;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 2px 4px rgb(34,193,195);
 }
 
 .underline {
@@ -310,6 +329,7 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #fff;
+    
 }
 
 form {
@@ -335,17 +355,26 @@ form button {
     cursor: pointer;
 }
 
-.social-icons i {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.social-icon {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: rgb(34,193,195);
+  
 }
 
 hr {
@@ -358,20 +387,11 @@ hr {
 .copyright {
     text-align: center;
     margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(34,193,195);
+    font-size: 25px;
 }
 
-@media (max-width: 700px) {
-    footer {
-        padding: 30px 0;
-    }
-    .col {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-    .col:nth-child(2), .col:nth-child(3) {
-        flex-basis: 100%;
-    }
-}
 
 footer a {
   color: #000; 
@@ -380,6 +400,30 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(94, 158, 61); 
+  color: rgb(34,193,195); 
   text-decoration: underline;
+}
+
+/* Breaker Section */
+
+.custom-shape-divider-bottom-1732837788 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1732837788 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 96px;
+}
+
+.custom-shape-divider-bottom-1732837788 .shape-fill {
+  fill: rgb(245, 242, 242);
+ 
 }

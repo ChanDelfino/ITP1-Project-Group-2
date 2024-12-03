@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LoginStyle.css" />
+    <title>Crave Cuisine</title>
+    <link rel="icon" type="image/png" href="img/c.png">
+</head>
+
+<body>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <div class="container">
+           
+        <!-- Navigation Bar Section -->
+
+        <header>
+            <nav id="navbar">
+                <div class="logo-container">
+                    <img src="img/c.png" alt="Logo"> 
+                    <span class="logo-name">Crave Cuisine</span>
+                  </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="Reviews.html">Reviews</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="LogIn.html">Log In</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Sign In and Sign Up Section -->
+
+                <div class="cont">
+                    <div class="form sign-in">
+                        <h2>- Welcome -</h2>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" />
+                        </label>
+                        <label>
+                            <span>Password</span>
+                            <input type="password" />
+                        </label>
+                        <p class="forgot-pass">Forgot password?</p>
+                        <button type="button" class="submit">Sign In</button>
+                     
+                    </div>
+                    <div class="sub-cont">
+                        <div class="img">
+                            <div class="img__text m--up">
+                             
+                                <h
+                                3>Don't have an account? Please Sign up!<h3>
+                            </div>
+                            <div class="img__text m--in">
+                            
+                                <h3>If you already have an account, Please Sign in.<h3>
+                            </div>
+                            <div class="img__btn">
+                                <span class="m--up">Sign Up</span>
+                                <span class="m--in">Sign In</span>
+                            </div>
+                        </div>
+                        <div class="form sign-up">
+                            <h2>Create your Account</h2>
+                            <label>
+                                <span>Name</span>
+                                <input type="text" />
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" />
+                            </label>
+                            <label>
+                                <span>Password</span>
+                                <input type="password" />
+                            </label>
+                            <button type="button" class="submit">Sign Up</button>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Section -->
+
+                <script>
+                    document.querySelector('.img__btn').addEventListener('click', function() {
+                        document.querySelector('.cont').classList.toggle('s--signup');
+                    });
+                </script>
+                
+
+                
+        
+</body>
+
+</html>
